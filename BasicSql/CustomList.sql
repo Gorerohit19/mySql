@@ -7,3 +7,8 @@ select field('B','A','B','C');
 and sort the result by the result of the FIELD() function:*/
 select orderNumber, status from orders
 order by field(status, 'Inprocess', 'OnHold', 'Cancelled', 'Resolved', 'Disputed', 'Shipped');
+
+/*For example, the following query uses the ORDER BY clause to 
+sort employees by values in the reportsTo column:*/
+select firstName, lastName, reportsTo from employees 
+order by reportsTo;
