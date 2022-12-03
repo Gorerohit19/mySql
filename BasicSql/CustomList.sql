@@ -12,3 +12,8 @@ order by field(status, 'Inprocess', 'OnHold', 'Cancelled', 'Resolved', 'Disputed
 sort employees by values in the reportsTo column:*/
 select firstName, lastName, reportsTo from employees 
 order by reportsTo;
+
+/*However, if you use the ORDER BY with the DESC option, 
+NULLs will appear last in the result set. For example:*/
+select firstName, lastName, reportsTo from employees
+order by reportsTo desc;
