@@ -6,4 +6,4 @@ select field('B','A','B','C');
 /* you can use the FIELD() function to map each order status to a number 
 and sort the result by the result of the FIELD() function:*/
 select orderNumber, status from orders
-order by 
+order by field(status, 'Inprocess', 'OnHold', 'Cancelled', 'Resolved', 'Disputed', 'Shipped');
