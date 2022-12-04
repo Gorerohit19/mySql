@@ -49,3 +49,9 @@ order by firstName;
  select lastName, firstName, reportsTo
  from employees
  where reportsTo is null;
+ 
+ /*The following query uses the not equal to (<>) operator to find 
+ all employees who are not the Sales Rep:*/
+ select lastName, firstName, jobTitle
+from employees
+where jobTitle <> 'sales Rep';
