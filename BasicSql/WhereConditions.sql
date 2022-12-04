@@ -61,4 +61,7 @@ select lastName, firstName, officeCode
 from employees
 where officeCode > 5;
 
-/**/
+/*The following query returns employees with office code less than or equal to 4 (<=4):*/
+select lastName, firstName, officeCode
+from employees
+where officeCode <= 4;
