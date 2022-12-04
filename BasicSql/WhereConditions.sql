@@ -55,3 +55,10 @@ order by firstName;
  select lastName, firstName, jobTitle
 from employees
 where jobTitle <> 'sales Rep';
+
+/*The following query finds employees whose office code is greater than 5:*/
+select lastName, firstName, officeCode
+from employees
+where officeCode > 5;
+
+/**/
