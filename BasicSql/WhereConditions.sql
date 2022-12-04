@@ -37,3 +37,9 @@ from employees
 where lastName like '%son'
 order by firstName;
 
+/*The following example uses the WHERE clause with the IN operator to find employees
+ who locate in the office with office code 1,2,3.*/
+ select firstName, lastName, officeCode
+ from employees
+ where officeCode in (1,2,3)
+ order by officeCode;
