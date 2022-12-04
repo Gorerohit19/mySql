@@ -43,3 +43,9 @@ order by firstName;
  from employees
  where officeCode in (1,2,3)
  order by officeCode;
+ 
+ /*The following statement uses the WHERE clause with the IS NULL operator to get 
+ the rows with the values in the reportsTo column are NULL:*/
+ select lastName, firstName, reportsTo
+ from employees
+ where reportsTo is null;
