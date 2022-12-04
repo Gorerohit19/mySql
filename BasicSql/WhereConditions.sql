@@ -31,3 +31,9 @@ from employees
 where officeCode between 1 and 3
 order by officeCode;
 
+/*The following query finds the employees whose last names end with the string 'son':*/
+select firstName, lastName 
+from employees 
+where lastName like '%son'
+order by firstName;
+
