@@ -17,3 +17,11 @@ find employees whose job titles are Sales Rep and office codes are 1:*/
 select lastName, firstName, jobTitle, officeCode
 from employees
 where jobtitle ='Sales Rep' and officeCode = 1;
+
+/*This query finds employees whose job title is Sales 
+Rep or employees who locate the office with office code 1:*/
+select lastName, firstName, jobTitle, officeCode
+from employees
+where jobTitle = 'Sales Rep' or officeCode = 1
+order by jobTitle, officeCode ;
+
