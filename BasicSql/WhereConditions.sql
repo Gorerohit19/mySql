@@ -25,3 +25,9 @@ from employees
 where jobTitle = 'Sales Rep' or officeCode = 1
 order by jobTitle, officeCode ;
 
+/*The following query finds employees who locate in offices whose office code is from 1 to 3:*/
+select firstName, lastName, officeCode
+from employees
+where officeCode between 1 and 3
+order by officeCode;
+
