@@ -16,3 +16,9 @@ select all the customers located in the USA or France:*/
 select customerName, country
 from customers
 where country='USA' or country='France';
+
+/*The following example uses the OR operator to select the customers who locate in the USA or 
+France and have a credit limit greater than 100,000.*/
+select customerName, country, crediteLimit
+from customers
+where ( country = 'USA' or country = 'France') and creditLimite > 100000;
